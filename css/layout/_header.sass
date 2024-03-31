@@ -1,0 +1,50 @@
+.header
+    height: 300px
+    position: relative
+    text-align: center
+    +screen-size(s)
+        height: 200px
+    &-content
+        width: 80%
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate( -50%, -75% )
+        +screen-size(s)
+            transform: translate( -50%, -60% )
+    h1
+        color: map-get( $color, grey-0 )
+        display: flex
+        align-items: center
+        justify-content: center
+        font:
+            size: map-get( $size, 800 )
+            weight: 500
+        +screen-size(sm)
+            font-size: map-get( $size, 700 )
+        +screen-size(s)
+            font-size: map-get( $size, 500 )
+    p
+        color: map-get( $color, grey-300 )
+    span
+        font-size: map-get( $size, 400 )
+        +screen-size(sm)
+            font-size: map-get( $size, 300 )
+        +screen-size(s)
+            display: block
+            font-size: map-get( $size, 200 )
+        &::before
+            content: '#'
+            margin-right: map-get( $spacing, 100 )
+        + span
+            margin-left: map-get( $spacing, 200 )
+            +screen-size(s)
+                margin-left: 0
+    .btn-link
+        line-height: .25
+        margin-left: map-get( $spacing, 150 )
+        svg
+            color: map-get( $color, red )
+            transition: .3s
+            &:hover
+                color: #EB877E

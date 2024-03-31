@@ -1,0 +1,19 @@
+.footer
+    color: map-get( $color, grey-0 )
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: map-get( $spacing, 1000 ) auto map-get( $spacing, 500 )
+    .contact
+        display: flex
+        margin: 0 0 map-get( $spacing, 100 )
+        li
+            a
+                display: inline-block
+            &:not(:last-child)
+                &::after
+                    content: '｜'
+                    display: inline-block
+                    margin: 0 map-get( $spacing, 150 ) 0 map-get( $spacing, 100 )
+    p
+        color: map-get( $color, grey-300 )

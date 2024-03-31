@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jocelyn's Portfolio</title>
+    <link rel="shortcut icon" href="images/logo_black.svg" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div id="progressBar" class="progress-bar"></div>
+    </div>
+    <!-- Navigation -->
+    <nav class="nav container">
+        <a class="nav-logo" href="index.html">
+            <img src="images/logo.svg" alt="Jocelyn Hu's Portfolio">
+        </a>
+        <ul class="nav-submenu">
+            <li class="sub-nav-item">
+                <a href="about.html">About</a>
+            </li>
+            <li class="sub-nav-item">
+                <a href="index.html#work">Work</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Header -->
+    <header class="header container">
+        <section class="header-content">
+            <h1>招募系統APP-履歷頁Redesign</h1>
+            <p>
+                履歷頁重新設計，使頁面資訊更加清晰、易於理解，期望能幫助使用者更有效地獲取關鍵資訊，提高篩選效率。
+            </p>
+        </section>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <section class="container">
+            <ul class="cards project">
+                <li class="project-item">
+                    <img src="images/icon_time.svg" alt="">
+                    <section class="project-info">
+                        <h2 class="project-info-title">專案時程</h2>
+                        <p>4天</p>
+                    </section>
+                </li>
+                <li class="project-item">
+                    <img src="images/icon_user.svg" alt="">
+                    <section class="project-info">
+                        <h2 class="project-info-title">擔任角色</h2>
+                        <p>UIUX設計師</p>
+                    </section>
+                </li>
+                <li class="project-item max">
+                    <img src="images/icon_note.svg" alt="">
+                    <section class="project-info">
+                        <h2 class="project-info-title">負責項目</h2>
+                        <p>介面優化、流程體驗優化</p>
+                    </section>
+                </li>
+            </ul>
+        </section>
+        <div class="divider"></div>
+        <section class="container cards">
+            <section class="project-section">
+                <h2 class="project-subtitle">專案概述</h2>
+                <p>作為一款專注於協助人資、雇主招募人才的產品，我們將求職者的履歷頁面視為核心閱讀區域。在先前版本中，我們收到過關於履歷頁面資訊混亂、目標資訊難以尋找的投訴。因此，在產品色彩優化過後，我們將首要優化目標集中在求職者的履歷頁面上。</p>
+                <p>考量到履歷擁有大量的文字內容，我們決定避免使用過度華麗的設計，專注於資訊的清晰呈現，幫助使用者更容易地理解和消化履歷中的內容，提升閱讀體驗。</p>
+            </section>
+            <section class="project-section">
+                <h2 class="project-subtitle">現有問題</h2>
+                <ol class="project-list">
+                    <li>按鈕位置分散且凌亂，一些重要的功能可能會被掩蓋或埋沒在頁面中</li>
+                    <li>將履歷加入追蹤後無法取消，只能到追蹤名單列表中並取消追蹤</li>
+                    <li>若求職者經驗豐富， 頁面上資訊過長可能會造成信息過量，使用者會難以快速捕捉重要資訊</li>
+                </ol>
+            </section>
+            <section class="project-section">
+                <h2 class="project-subtitle">優化目標</h2>
+                <ol class="project-list">
+                    <li>調整按鈕與履歷內容排放位置，增加第一屏可視資訊</li>
+                    <li>部分欄位限制內容顯示筆數，採用摺疊的方式避免頁面篇幅過長</li>
+                    <li>欄位名稱對齊Web端，不各自表述</li>
+                    <li>可直接在同一個頁面將求職者加入或取消追蹤</li>
+                </ol>
+            </section>
+            <figure class="project-img img-group" role="group">
+                <figure class="img-before">
+                    <img src="images/project/recruiter_resume/improve_before.png" alt="">
+                    <figcaption>Before</figcaption>
+                </figure>
+                <figure class="img-after">
+                    <img src="images/project/recruiter_resume/improve_after.png" alt="">
+                    <figcaption>After</figcaption>
+                </figure>
+            </figure>
+        </section>
+        <div class="divider"></div>
+        <section class="container cards">
+            <section class="project-section">
+                <h2 class="project-subtitle">資訊架構</h2>
+                <h3 class="project-typetitle">按鈕</h3>
+                <p>重新梳理所有按鈕的重要層級，將其重新排序，讓使用者在我們的產品中快速找到想使用的功能。</p>
+                <figure class="project-img img-group" role="group">
+                    <figure class="img-before">
+                        <img src="images/project/recruiter_resume/ia_old.png" alt="">
+                        <figcaption>Before</figcaption>
+                    </figure>
+                    <figure class="img-after">
+                        <img src="images/project/recruiter_resume/ia_new.png" alt="">
+                        <figcaption>After</figcaption>
+                    </figure>
+                </figure>
+            </section>
+            <section class="project-section">
+                <h3 class="project-typetitle">內容</h3>
+                <p>重新盤點所有欄位，比對求職端的欄位、求才端網頁版的欄位名稱，並依重要性與相關性重新排序。</p>
+                <picture class="project-img">
+                    <source srcset="images/project/recruiter_resume/ia_content.png">
+                    <img src="images/project/recruiter_resume/ia_content.png" alt="">
+                </picture>
+            </section>
+        </section>
+        <div class="divider"></div>
+        <section class="container cards">
+            <section class="project-section">
+                <h2 class="project-subtitle">畫面比對</h2>
+                <picture class="project-img">
+                    <source srcset="images/project/recruiter_resume/img01.png">
+                    <img src="images/project/recruiter_resume/img01.png" alt="">
+                </picture>
+                <ol class="project-list">
+                    <li>透過重新配置求職者照片與功能按鈕的位置（如加入追蹤、履歷備註等），將核心功能融入浮動工具欄，並將次要功能整合至右上的更多選單中，以提升畫面第一屏的資訊可視性</li>
+                    <li>由於求職者的職涯測驗結果並非招募者的首要考量，因此將其位置調整為次要層級</li>
+                    <li>對導覽列進行重新設計，包括調整間距和使用更直觀的icon，以提升用戶對導覽功能的辨識和操作體驗</li>
+                    <li>對底部浮動按鈕欄進行重新設計，調整按鈕的間距，以增加按鈕的可點擊區域，同時突顯關鍵按鈕的重要與優先性</li>
+                </ol>
+                <picture class="project-img mt-500">
+                    <source srcset="images/project/recruiter_resume/img02.png">
+                    <img src="images/project/recruiter_resume/img02.png" alt="">
+                </picture>
+                <ol class="project-list">
+                    <li class="num-5">承第一點，將次要功能整合至選單中，並在選單中重新調整排序，使正向功能優先展示，負向功能次之</li>
+                </ol>
+                <picture class="project-img mt-500">
+                    <source srcset="images/project/recruiter_resume/img03.png">
+                    <img src="images/project/recruiter_resume/img03.png" alt="">
+                </picture>
+                <ol class="project-list">
+                    <li class="num-6">以卡片形式呈現每份工作經驗，使每份工作經驗更具辨識性，有助於用戶在視覺上區分不同的工作經驗</li>
+                    <li class="num-7">考慮到求職者工作經驗過多時的頁面篇幅，我們將第三份及之後的工作經驗採用折疊式設計，以減少頁面長度，降低訊息過載的風險，同時保留使用者查看詳情的彈性</li>
+                </ol>
+                <picture class="project-img mt-500">
+                    <source srcset="images/project/recruiter_resume/img04.png">
+                    <img src="images/project/recruiter_resume/img04.png" alt="">
+                </picture>
+                <ol class="project-list">
+                    <li class="num-8">為了改善用戶對電腦專長、專業證照、工作技能的查找體驗，在分類前方加上圖示，讓使用者能夠更迅速地找到所需的分類</li>
+                </ol>
+                <picture class="project-img mt-500">
+                    <source srcset="images/project/recruiter_resume/img05.png">
+                    <img src="images/project/recruiter_resume/img05.png" alt="">
+                </picture>
+                <ol class="project-list">
+                    <li class="num-9">與工作經驗列表相同，以卡片形式呈現學歷資訊，增加使用者對於每份學歷的區分度</li>
+                    <li class="num-10">學歷列表和工作列表相同，將第三份及之後的學歷採用折疊式設計，減少頁面長度，同時保留使用者查看詳情的彈性</li>
+                </ol>
+                <picture class="project-img mt-500">
+                    <source srcset="images/project/recruiter_resume/img06.png">
+                    <img src="images/project/recruiter_resume/img06.png" alt="">
+                </picture>
+                <ol class="project-list">
+                    <li class="num-11">自傳也採用折疊方式，節省頁面空間的同時，也提高整體視覺清晰度</li>
+                </ol>
+            </section>
+        </section>
+        <div class="divider"></div>
+        <section class="container cards">
+            <section class="project-section">
+                <h2 class="project-subtitle">後記</h2>
+                <p>因本次只是一個頁面的小優化，加上改動的幅度不大，因此並沒有遇到很多的挑戰，其中唯一比較耗時討論的就是按鈕的層級，將使用率較低的功能弱化、配合Web端未來改版著重的功能都考量進去等，算是順利完成本次的優化～</p>
+            </section>
+        </section>
+    </main>
+    <!-- Next -->
+    <section class="more container">
+        <a class="btn btn-next" href="project_recruiter.html">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.3757 10.976C17.1414 11.2103 17.1414 11.5902 17.3757 11.8246L21.9515 16.4003H10.6C10.2686 16.4003 10 16.6689 10 17.0003C10 17.3317 10.2686 17.6003 10.6 17.6003H21.9515L17.3757 22.176C17.1414 22.4103 17.1414 22.7902 17.3757 23.0246C17.6101 23.2589 17.99 23.2589 18.2243 23.0246L23.8243 17.4246C24.0586 17.1902 24.0586 16.8103 23.8243 16.576L18.2243 10.976C17.99 10.7417 17.6101 10.7417 17.3757 10.976Z" fill="currentColor"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6001 16.9999C33.6001 7.83197 26.168 0.399902 17.0001 0.399902C7.83225 0.399902 0.400097 7.83197 0.400097 16.9999C0.400097 26.1678 7.83225 33.5999 17.0001 33.5999C26.168 33.5999 33.6001 26.1678 33.6001 16.9999ZM17.0001 1.5999C25.5053 1.5999 32.4001 8.49471 32.4001 16.9999C32.4001 25.505 25.5053 32.3999 17.0001 32.3999C8.49499 32.3999 1.6001 25.505 1.6001 16.9999C1.6001 8.49472 8.49499 1.5999 17.0001 1.5999Z" fill="currentColor"/>
+            </svg>
+            <section class="btn-content">
+                <p class="direction">下一篇</p>
+                <p class="name">招募系統APP-色彩優化</p>
+            </section>
+        </a>
+    </section>
+    <!-- Footer -->
+    <footer class="footer container">
+        <section class="footer-info">
+            <ul class="contact">
+                <li>
+                    <a href="mailto:ms.jocelyn.hu@gmail.com" target="_blank">
+                        Email
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.linkedin.com/in/jocelyn-hu" target="_blank">
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+            <p>
+                © 2024 Jocelyn Hu
+            </p>
+        </section>
+        <a class="gotop" href="#">
+            <img src="images/arrow_up.svg" alt="">
+        </a>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- <script src="js/delighters.js"></script> -->
+<script src="js/main.js"></script>
+</html>

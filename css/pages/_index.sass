@@ -1,0 +1,82 @@
+.cards
+    padding:
+        top: map-get( $spacing, 500 )
+        bottom: map-get( $spacing, 500 )
+    +screen-size(lg)
+        padding:
+            top: map-get( $spacing, 150 )
+            bottom: map-get( $spacing, 150 )
+    +screen-size(md)
+        padding:
+            top: 0
+            bottom: 0
+    &-item
+        display: flex
+        gap: map-get( $spacing, 500 )
+        +screen-size(md)
+            flex-wrap: wrap
+            gap: map-get( $spacing, 200 )
+        &:not(:last-child)
+            margin-bottom: map-get( $spacing, 1000 )
+            +screen-size(md)
+                margin-bottom: map-get( $spacing, 700 )
+    &-cover
+        border-radius: map-get( $radius, 200 )
+        flex: 1
+        a
+            line-height: 0
+        img
+            &:hover
+                transform: scale(1.05)
+    &-content
+        display: flex
+        flex: 1
+        flex-flow: column
+        justify-content: space-between
+        +screen-size(md)
+            flex: auto
+        .date
+            color: map-get( $color, grey-secondary )
+            font-size: map-get( $size, 100 )
+            margin-bottom: map-get( $spacing, 150 )
+        h2
+            font:
+                size: map-get( $size, 400 )
+                weight: 500
+            margin-bottom: map-get( $spacing, 100 )
+        .tags
+            display: flex
+            flex-wrap: wrap
+            +screen-size(md)
+                margin-top: map-get( $spacing, 300 )
+            span
+                border: 1px solid map-get( $color, grey-tertiary )
+                border-radius: map-get( $radius, 400 )
+                color: map-get( $color, grey-tertiary )
+                display: inline-block
+                font-size: map-get( $size, 100 )
+                margin-top: map-get( $spacing, 150 )
+                padding: 6px map-get( $spacing, 250 ) map-get( $spacing, 100 )
+                &::before
+                    content: '#'
+                    margin-right: map-get( $spacing, 100 )
+                &:not(:last-child)
+                    margin-right: map-get( $spacing, 150 )
+    &-design
+        display: flex
+        gap: map-get( $spacing, 500 )
+        +screen-size(md)
+            flex-wrap: wrap
+        li
+            +screen-size(md)
+                display: flex
+                flex-direction: column-reverse
+                gap: map-get( $spacing, 200 )
+        .cards-cover
+            margin: map-get( $spacing, 300 ) 0 0
+            +screen-size(md)
+                flex: auto
+                margin: 0
+        .date
+            +screen-size(md)
+                margin-bottom: 0
