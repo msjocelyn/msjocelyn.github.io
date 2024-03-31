@@ -169,6 +169,7 @@ main::before {
   background: #F9F9F9;
   border-radius: 40px 40px 0 0;
   display: block;
+  line-height: 0;
   position: absolute;
   top: -40px;
 }
@@ -187,6 +188,7 @@ main::after {
   background: #F9F9F9;
   border-radius: 0 0 40px 40px;
   display: block;
+  line-height: 0;
   position: absolute;
   bottom: -40px;
 }
