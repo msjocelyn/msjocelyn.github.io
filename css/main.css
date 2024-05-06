@@ -780,6 +780,8 @@ html::-webkit-scrollbar-track-piece, body::-webkit-scrollbar-track-piece {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -791,6 +793,7 @@ html::-webkit-scrollbar-track-piece, body::-webkit-scrollbar-track-piece {
 
 @media only screen and (max-width: 450px) {
   .project-info-title {
+    width: 100%;
     margin: 0 8px 0 0;
   }
 }
