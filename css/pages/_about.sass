@@ -25,6 +25,14 @@
         margin: map-get( $spacing, 100 ) 0
     &-company
         color: map-get( $color, grey-primary )
+        &-divider
+            color: map-get( $color, grey-tertiary )
+            +screen-size(sm)
+                display: none
+        &-time
+            +screen-size(sm)
+                color: map-get( $color, grey-tertiary )
+                display: block
     &-jobdesc
         font-weight: 500
         margin: map-get( $spacing, 200 ) 0 map-get( $spacing, 100 )

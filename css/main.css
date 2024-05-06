@@ -662,6 +662,23 @@ html::-webkit-scrollbar-track-piece, body::-webkit-scrollbar-track-piece {
   color: #262626;
 }
 
+.about-company-divider {
+  color: #B0B0B0;
+}
+
+@media only screen and (max-width: 576px) {
+  .about-company-divider {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .about-company-time {
+    color: #B0B0B0;
+    display: block;
+  }
+}
+
 .about-jobdesc {
   font-weight: 500;
   margin: 12px 0 4px;
@@ -1090,6 +1107,7 @@ html::-webkit-scrollbar-track-piece, body::-webkit-scrollbar-track-piece {
 .more .name {
   color: #FFFFFF;
   margin: 0;
+  text-align: left;
 }
 
 .rows {
