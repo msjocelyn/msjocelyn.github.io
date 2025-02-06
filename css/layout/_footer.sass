@@ -1,0 +1,25 @@
+footer
+    .line
+        width: 1px
+        height: map-get($size, 500)
+        background: map-get($palette-grey, 500)
+        margin: map-get($size, 1000) auto map-get($size, 500)
+        overflow: hidden
+        position: relative
+        +screen-size(md)
+            margin: map-get($size, 600) auto map-get($size, 500)
+        &::before
+            content: ''
+            width: 1px
+            height: 20px
+            animation: ani-line 2.5s ease-in-out 0s infinite
+            background: map-get($color, primary)
+            background: linear-gradient(0deg, rgba(5,168,122,1) 0%, rgba(80,83,82,1) 100%)
+            position: absolute
+            left: 0
+    p
+        font-size: map-get($font-size, Body-2)
+        margin: map-get($size, 200) 0 map-get($size, 800)
+        +screen-size(sm)
+            margin: map-get($size, 200) 0 map-get($size, 500)
+

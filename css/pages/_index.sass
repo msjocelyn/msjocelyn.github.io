@@ -1,0 +1,53 @@
+.work
+    display: flex
+    flex-wrap: wrap
+    gap: map-get($size, 700)
+    +screen-size(sm)
+        gap: map-get($size, 500)
+    // &.container
+    //     +screen-size(sm)
+    //         padding: 0 map-get($size, 400)
+    &-cover
+        border-radius: map-get($radius, 200)
+        box-shadow: 0 0 0 map-get($size, 250) map-get($color, background-grey)
+        line-height: 0
+        margin: map-get($size, 250) 0
+        overflow: hidden
+        transition: .3s
+        +screen-size(md)
+            box-shadow: 0 0 0 map-get($size, 200) map-get($color, background-grey)
+        +screen-size(sm)
+            box-shadow: 0 0 0 map-get($size, 150) map-get($color, background-grey)
+        &:hover
+            // box-shadow: 0 0 0 map-get($size, 300) rgba(5, 168, 122, .12)
+            // +screen-size(md)
+                // box-shadow: 0 0 0 map-get($size, 200) rgba(5, 168, 122, .12)
+            img
+                transform: scale(1.1)
+            ~ section
+                a
+                    color: map-get( $color, primary )
+                svg
+                    fill: map-get( $color, primary )
+    &-content
+        padding-top: map-get($size, 250)
+        +screen-size(md)
+            padding-top: map-get($size, 100)
+        svg
+            fill: map-get( $color, grey-primary )
+            transition: .3s
+    &-name
+        color: map-get($color, grey-primary)
+        font:
+            size: map-get($font-size, Headline-4)
+            weight: 500
+        +screen-size(sm)
+            font-size:  map-get($font-size, Headline-5)
+        a
+            display: flex
+            align-items: center
+            gap: map-get($size, 50)
+            &:hover
+                color: map-get( $color, primary )
+                svg
+                    fill: map-get( $color, primary )

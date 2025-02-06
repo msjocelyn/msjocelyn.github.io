@@ -1,0 +1,22 @@
+@mixin screen-size( $point )
+    @if $point == xxl
+        @media only screen and (max-width: 1440px)
+            @content
+    @if $point == xl
+        @media only screen and (max-width: 1200px)
+            @content
+    @else if $point == lg
+        @media only screen and (max-width: 992px)
+            @content
+    @else if $point == md
+        @media only screen and (max-width: 769px)
+            @content
+    @else if $point == sm
+        @media only screen and (max-width: 576px)
+            @content
+    @else if $point == s
+        @media only screen and (max-width: 450px)
+            @content
+    @else if $point == xs
+        @media only screen and (max-width: 320px)
+            @content

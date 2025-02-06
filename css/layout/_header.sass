@@ -1,0 +1,125 @@
+header
+    overflow: hidden
+
+.header
+    color: map-get($color, grey-primary)
+    margin-top: map-get($size, 900)
+    position: relative
+    z-index: 1
+    +screen-size(md)
+        margin-top: map-get($size, 700)
+    +screen-size(sm)
+        margin-top: map-get($size, 400)
+    &::after
+        content: ''
+        width: 800px
+        height: 800px
+        background: radial-gradient(circle, rgba(5,168,122,1) 0%, rgba(34,35,34,1) 70%)
+        filter: blur(40px)
+        opacity: .8
+        position: absolute
+        left: 50%
+        top: 0
+        transform: translate(-50%, -75%)
+        z-index: -1
+        +screen-size(sm)
+            transform: translate(-50%, -85%)
+    &-index
+        p
+            color: map-get($palette-green, 700)
+            font-size: map-get($font-size, Headline-3)
+            +screen-size(sm)
+                font-size: map-get($font-size, Headline-5)
+        h1
+            font:
+                size: 56px
+                weight: 500
+            // margin-top: map-get($size, 100)
+            +screen-size(sm)
+                font-size: map-get($font-size, Headline-3)
+            .mark
+                color: map-get($color, primary)
+                font-size: map-get($font-size, Headline-1)
+                +screen-size(sm)
+                    font:
+                        size: 30px
+                        weight: 600
+        h2
+            font:
+                size: map-get($font-size, Headline-3)
+                // weight: 400
+            margin-top: map-get($size, 50)
+            +screen-size(sm)
+                font-size: map-get($font-size, Headline-5)
+            .mark
+                background: map-get($color, primary)
+                border-radius: map-get($radius, 1000)
+                margin: 0 map-get($size, 100)
+                padding: map-get($size, 50) map-get($size, 250)
+                +screen-size(sm)
+                    margin: 0 map-get($size, 50)
+                    padding: map-get($size, 50) map-get($size, 200)
+    &-project
+        p
+            color: map-get($palette-green, 700)
+            font-size: map-get($font-size, Headline-3)
+            margin-bottom: map-get($size, 300)
+            +screen-size(sm)
+                font-size: map-get($font-size, Headline-5)
+        h1
+            font:
+                size: map-get($font-size, Headline-2)
+                weight: 500
+            +screen-size(sm)
+                font-size: map-get($font-size, Headline-3)
+                        weight: 600
+        h2
+            color: map-get($color, grey-secondary)
+            font:
+                size: map-get($font-size, Headline-3)
+                // weight: 400
+            margin-top: map-get($size, 50)
+            +screen-size(sm)
+                font-size: map-get($font-size, Headline-5)
+    &-link
+        display: flex
+        align-items: center
+        justify-content: center
+        a
+            line-height: 1
+            &:hover
+                svg
+                    fill: map-get($color, primary-hover)
+        svg
+            fill: map-get($color, primary)
+            transition: .3s
+
+
+.scroll-line
+    width: 1px
+    height: map-get($size, 500)
+    background: map-get($palette-grey, 500)
+    margin: 104px auto
+    overflow: hidden
+    position: relative
+    +screen-size(md)
+        margin: map-get($size, 900) auto
+    +screen-size(sm)
+        margin: map-get($size, 600) auto
+    +screen-size(s)
+        margin: map-get($size, 400) auto
+    &::before
+        content: ''
+        width: 1px
+        height: 20px
+        animation: ani-line 2.5s ease-in-out 0s infinite
+        background: map-get($color, primary)
+        background: linear-gradient(0deg, rgba(5,168,122,1) 0%, rgba(80,83,82,1) 100%)
+        position: absolute
+        left: 0
+
+@keyframes ani-line
+    0%
+        top: -32px
+    100%
+        top: 80px

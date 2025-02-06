@@ -1,0 +1,28 @@
+<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_128_510)">
+<path d="M16.9074 2.93499C16.9074 2.24831 16.1386 2.2483 15.7969 2.33413C16.2753 1.95645 16.8362 2.04802 17.0356 2.16247L21.6554 4.42771C22.0956 4.64355 22.3748 5.09266 22.3748 5.58482V20.4868C22.3748 20.9856 22.0881 21.4394 21.639 21.6518L17.2919 23.7073C16.9929 23.8361 16.3436 24.1536 15.7969 23.7073C16.4803 23.8361 16.8505 23.3497 16.9074 23.0206V2.93499Z" fill="url(#paint0_linear_128_510)"/>
+<path d="M15.8525 2.32152C16.2152 2.24986 16.9076 2.28309 16.9076 2.93477V8.06421L2.90124 18.6601C2.65642 18.8453 2.31188 18.8146 2.10335 18.589L0.659791 17.0269C0.433644 16.7822 0.449467 16.3992 0.695018 16.1741L15.7971 2.3339L15.8525 2.32152Z" fill="url(#paint1_linear_128_510)"/>
+<path d="M16.9076 17.977L2.90124 7.38111C2.65642 7.1959 2.31188 7.22663 2.10335 7.45227L0.659791 9.0143C0.433644 9.25901 0.449467 9.64205 0.695018 9.86708L15.7971 23.7073C16.4805 23.8361 16.8507 23.3497 16.9076 23.0206V17.977Z" fill="url(#paint2_linear_128_510)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_128_510" x1="19.0858" y1="2.0625" x2="19.0858" y2="23.9375" gradientUnits="userSpaceOnUse">
+<stop stop-color="#32B5F1"/>
+<stop offset="1" stop-color="#2B9FED"/>
+</linearGradient>
+<linearGradient id="paint1_linear_128_510" x1="16.9076" y1="4.82315" x2="1.29821" y2="17.9256" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0F6FB3"/>
+<stop offset="0.270551" stop-color="#1279B7"/>
+<stop offset="0.421376" stop-color="#1176B5"/>
+<stop offset="0.618197" stop-color="#0E69AC"/>
+<stop offset="0.855344" stop-color="#0F70AF"/>
+<stop offset="1" stop-color="#0F6DAD"/>
+</linearGradient>
+<linearGradient id="paint2_linear_128_510" x1="1.40251" y1="8.29976" x2="16.9681" y2="21.188" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1791D2"/>
+<stop offset="1" stop-color="#1173C5"/>
+</linearGradient>
+<clipPath id="clip0_128_510">
+<rect width="25" height="25" fill="white" transform="translate(0.5 0.5)"/>
+</clipPath>
+</defs>
+</svg>

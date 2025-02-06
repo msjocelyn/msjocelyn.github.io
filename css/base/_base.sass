@@ -1,0 +1,84 @@
+*
+    box-sizing: border-box
+    line-height: 160%
+    scroll-behavior: smooth
+    &::selection
+        background: map-get($color, primary)
+        color: white
+
+html, body
+    animation: fadein .5s ease-in-out 0s
+    background: map-get($color, background)
+    color: map-get($color, grey-secondary)
+    font:
+        family: 'Roboto', 'Noto Sans TC', sans-serif
+        size: map-get($font-size, Body-1)
+        weight: 400
+    letter-spacing: 2px
+    text-align: justify
+    // +screen-size(sm)
+    //     font-size: map-get($font-size, Body-2)
+
+section
+    line-height: 160%
+    &.end
+        + .project-others
+            margin-top: map-get($size, 200)
+
+@keyframes fadein
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+a
+    color: inherit
+    display: block
+    text-decoration: none
+    transition: .3s
+    &:hover
+        color: map-get($color, grey-primary)
+
+img
+    width: 100%
+    max-width: fit-content
+    height: auto
+    transition: .3s
+
+figure
+    height: fit-content
+    line-height: 0
+    overflow: hidden
+
+figcaption
+    line-height: 160%
+
+picture
+    display: block
+    text-align: center
+
+p
+    + p
+        margin-top: map-get($size, 200)
+
+.container
+    width: 100%
+    max-width: 800px
+    margin: 0 auto
+    padding: 0 map-get($size, 250)
+    +screen-size(md)
+        padding: 0 map-get($size, 500)
+    +screen-size(sm)
+        padding: 0 map-get($size, 300)
+
+.divider
+    width: 100%
+    height: 1px
+    background: map-get($color, border)
+
+.text-center
+    text-align: center
+
+.img-radius
+    border-radius: map-get($radius, 100)
+

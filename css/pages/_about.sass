@@ -1,0 +1,65 @@
+.mine
+    display: flex
+    flex-wrap: wrap
+    gap: map-get($size, 700)
+    +screen-size(sm)
+        gap: map-get($size, 500)
+    &.container
+        +screen-size(md)
+            padding: 0 map-get($size, 300)
+    &-experience
+        + section
+            margin-top: map-get($size, 300)
+    &-group
+        display: flex
+        align-items: center
+        gap: map-get($size, 200)
+        +screen-size(sm)
+            align-items: flex-start
+            gap: map-get($size, 150)
+        + section
+            margin-top: map-get($size, 200)
+    &-icon
+        background: map-get($color, background-grey)
+        border-radius: 8px
+        padding: map-get($size, 150)
+        +screen-size(sm)
+            max-width: 48px
+    &-subtitle
+        color: map-get($color, grey-primary)
+        +screen-size(sm)
+            text-align: left
+        h4
+            font-weight: 500
+            margin-bottom: map-get($size, 50)
+        &.skill
+            p
+                color: map-get($color, grey-secondary)
+    &-content
+        margin: map-get($size, 150) 0 0 map-get($size, 1000)
+        +screen-size(sm)
+            margin: map-get($size, 150) 0 0 map-get($size, 700)
+            text-align: left
+    &-tool
+        display: flex
+        flex-wrap: wrap
+        gap: map-get($size, 250)
+        +screen-size(s)
+            gap: map-get($size, 200)
+        li
+            width: 100%
+            max-width: calc( 25% - 15px )
+            +screen-size(md)
+                max-width: calc( 33% - 12px )
+            +screen-size(sm)
+                max-width: calc( 50% - 10px )
+            +screen-size(s)
+                max-width: 100%
+        figure
+            display: flex
+            align-items: center
+            gap: map-get($size, 150)
+    &-logo
+        background: map-get($color, background-grey)
+        border-radius: 8px
+        padding: map-get($size, 100)

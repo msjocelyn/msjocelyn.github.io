@@ -1,0 +1,274 @@
+.project
+    display: flex
+    flex-wrap: wrap
+    gap: map-get($size, 1000)
+    +screen-size(sm)
+        gap: map-get($size, 600)
+    .container
+        display: flex
+        flex-direction: column
+        gap: map-get($size, 500)
+        // +screen-size(md)
+        //     padding: 0 map-get($size, 300)
+    +screen-size(sm)
+    &-overview  // 專案概述
+        background: rgba(44, 46, 45, .48)
+        border-radius: map-get($radius, 200)
+        display: flex
+        gap: map-get($size, 250)
+        padding: map-get($size, 250)
+        +screen-size(md)
+            flex-wrap: wrap
+        +screen-size(sm)
+            gap: map-get($size, 200)
+            padding: map-get($size, 200)
+        li
+            display: flex
+            align-items: flex-start
+            gap: map-get($size, 100)
+            &:nth-child(1)
+                flex-grow: 1
+                +screen-size(md)
+                    padding-right: map-get($size, 250)
+                //     width: 47%
+                +screen-size(sm)
+                    width: 100%
+                    padding-right: 0
+            &:nth-child(2)
+                flex-grow: 1
+                border-left: 1px solid map-get($color, border-dark)
+                padding-left: map-get($size, 250)
+                // +screen-size(md)
+                //     width: 47%
+                +screen-size(sm)
+                    width: 100%
+                    border-top: 1px solid map-get($color, border-dark)
+                    border-left: 0
+                    padding: map-get($size, 200) 0 0 0
+            &:nth-child(3)
+                flex-grow: 1
+                border-left: 1px solid map-get($color, border-dark)
+                padding-left: map-get($size, 250)
+                +screen-size(md)
+                    width: 100%
+                    border: 0
+                    padding: 0
+                +screen-size(sm)
+                    width: 100%
+                    border-top: 1px solid map-get($color, border-dark)
+                    padding: map-get($size, 200) 0 0 0
+            h3
+                color: map-get($color, grey-primary)
+                font-weight: 500
+                margin-top: map-get($size, 50)
+    &-subtitle
+        color: map-get($color, grey-primary)
+        font:
+            size: map-get($font-size, Headline-4)
+            weight: 500
+        margin-bottom: map-get($size, 100)
+        +screen-size(sm)
+            font-size: map-get($font-size, Headline-5)
+            // margin-bottom: map-get($size, 50)
+        ~ section
+            margin-top: map-get($size, 700)
+            +screen-size(sm)
+                margin-top: map-get($size, 500)
+        + section
+            margin-top: 0
+    &-challenge  // 專案挑戰
+        display: flex
+        gap: map-get($size, 250)
+        +screen-size(sm)
+            flex-wrap: wrap
+            gap: map-get($size, 150)
+        li
+            width: 100%
+            border: 1px solid map-get($color, border)
+            border-radius: map-get($radius, 200)
+            padding: map-get($size, 250)
+            text-align: center
+            +screen-size(sm)
+                border-radius: map-get($radius, 100)
+                display: flex
+                gap: map-get($size, 150)
+                padding: map-get($size, 200)
+                text-align: justify
+                img
+                    transform: scale(1.2)
+    &-problem  // 定義問題
+        background: rgba(246, 80, 53, .08)
+        border: 1px solid #872C1D
+        border-radius: map-get($radius, 200)
+        color: map-get($color, grey-primary)
+        display: flex
+        align-items: center
+        gap: map-get($size, 100)
+        margin-bottom: map-get($size, 100)
+        padding: map-get($size, 250)
+        +screen-size(sm)
+            border-radius: map-get($radius, 100)
+            padding: map-get($size, 200)
+    &-img
+        // filter: drop-shadow(8px 0 0 map-get($color, background-grey)) drop-shadow(0 8px 0 map-get($color, background-grey)) drop-shadow(-8px 0 0 map-get($color, background-grey))  drop-shadow(0 -8px 0 map-get($color, background-grey))
+        margin-top: map-get($size, 200)
+    &-target  // 優化目標
+        background: rgba(5, 168, 122, .04)
+        border: 1px solid #065F48
+        border-radius: map-get($radius, 200)
+        color: map-get($color, grey-primary)
+        display: flex
+        align-items: center
+        gap: map-get($size, 100)
+        margin-bottom: map-get($size, 100)
+        padding: map-get($size, 250)
+        +screen-size(sm)
+            border-radius: map-get($radius, 100)
+            padding: map-get($size, 200)
+        &:not(:first-child)
+            margin-top: map-get($size, 200)
+    &-output  // 設計產出
+        counter-reset: listCounter
+        display: flex
+        flex-direction: column
+        gap: map-get($size, 100)
+        li
+            counter-increment: listCounter
+            padding: 2px 0 0 map-get($size, 500)
+            position: relative
+            &::before
+                content: counter(listCounter, upper-alpha)
+                width: 26px
+                height: 26px
+                background: map-get($color, background-grey-hover)
+                border-radius: map-get($radius, 1000)
+                color: map-get($color, grey-primary)
+                padding: 2px 0 1px 3px
+                position: absolute
+                left: 0
+                top: 0
+                text-align: center
+        &-img
+            margin-bottom: map-get($size, 200)
+        &.part2
+            counter-reset: listCounter 2
+        + figure
+            margin-top: map-get($size, 250)
+    &-compare  // 前後對比
+        li:not(:first-child)
+            margin-top: map-get($size, 500)
+            +screen-size(sm)
+                margin-top: map-get($size, 300)
+        // img + img
+        //     margin-left: map-get($size, 300)
+        figure[role=group]
+            display: flex
+            justify-content: center
+            figure + figure
+                margin-left: map-get($size, 300)
+                +screen-size(sm)
+                    margin-left: map-get($size, 200)
+            figcaption
+                color: map-get($color, grey-tertiary)
+                font:
+                    size: map-get($font-size, Body-2)
+                    weight: 500
+                margin-bottom: map-get($size, 100)
+    &-system  // 建立設計系統
+        img + img
+            margin-top: map-get($size, 300)
+    &-idea  // 設計理念
+        counter-reset: numCounter
+        display: flex
+        flex-direction: column
+        gap: map-get($size, 100)
+        li
+            counter-increment: numCounter
+            padding: 2px 0 0 map-get($size, 500)
+            position: relative
+            &::before
+                content: counter(numCounter)
+                width: 26px
+                height: 26px
+                background: map-get($color, background-grey-hover)
+                border-radius: map-get($radius, 1000)
+                color: map-get($color, grey-primary)
+                padding: 2px 0 1px 3px
+                position: absolute
+                left: 0
+                top: 0
+                text-align: center
+    &-colors // 使用色彩
+        // color: map-get($color, grey-tertiary)
+        display: flex
+        flex-wrap: wrap
+        gap: map-get($size, 200)
+        margin-top: map-get($size, 200)
+        +screen-size(sm)
+            gap: map-get($size, 150)
+        li
+            width: calc( 20% - 13px )
+            font-size: map-get($font-size, Body-2)
+            +screen-size(sm)
+                width: calc( 25% - 9px )
+            +screen-size(s)
+                // width: calc( 33% - 8px )
+                width: calc( 50% - 7px )
+        .color
+            width: 100%
+            height: map-get($size, 800)
+            border-radius: 8px
+            margin-bottom: map-get($size, 50)
+            +screen-size(s)
+                height: map-get($size, 600)
+            &.black
+                background: #1E1E1E
+            &.grey
+                background: #555
+            &.white
+                background: #FFF
+            &.wheat
+                background: #F5EEE8
+            &.purple
+                background: #565CB2
+            &.pink
+                background: #F47E94
+            &.blue
+                background: #3079E2
+            &.yellow
+                background: #FACE00
+            &.cyan
+                background: #66CECE
+            &.orange
+                background: #FF9B64
+        &.anniverary
+            li
+                width: calc( 25% - 12px )
+                font-size: map-get($font-size, Body-2)
+                +screen-size(sm)
+                    width: calc( 25% - 9px )
+                +screen-size(s)
+                    // width: calc( 33% - 8px )
+                    width: calc( 50% - 7px )
+            .black
+                background: #141414
+            .grey
+                background: #454545
+            .grey-2
+                background: #8C8C8C
+            .pink
+                background: #E84666
+            .blue
+                background: #3671C4
+            .yellow
+                background: #FFD129
+            .green
+                background: #6BBB6B
+    &-others
+        display: flex
+        gap: map-get($size, 300)
+        +screen-size(sm)
+            flex-wrap: wrap
+            gap: map-get($size, 200)
+        li
+            width: 100%

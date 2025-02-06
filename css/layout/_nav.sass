@@ -1,0 +1,21 @@
+.nav
+    width: max-content
+    background: rgba(44, 46, 45, .24)
+    backdrop-filter: blur(40px)
+    border: 1px solid rgba(238, 238, 238, .24)
+    border-radius: map-get($radius, 1000)
+    display: flex
+    gap: map-get($size, 300)
+    margin: map-get($size, 700) auto 0
+    padding: map-get($size, 150) map-get($size, 500)
+    position: relative
+    transition: .3s
+    z-index: 2
+    +screen-size(md)
+        margin: map-get($size, 500) auto 0
+    +screen-size(sm)
+        gap: map-get($size, 200)
+        margin: map-get($size, 400) auto 0
+        padding: map-get($size, 100) map-get($size, 300)
+    &:hover
+        background: rgba(44, 46, 45, .4)
